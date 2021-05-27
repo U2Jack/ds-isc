@@ -1,0 +1,254 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;/* 1em o 1rem es igual al tamaño de la fuente de mi archivo HTML, BODY*/
+    font-family: 'Roboto', sans-serif;
+}
+
+/*clases globales*/
+.ancho_pag{
+    width: 80%;
+    margin: 0.5em 10%;
+}
+.text-blue{
+    color: #085d80;
+}
+.bg-blue{
+    background: #085d80;
+}
+
+.padding-2em-x{
+    padding: 2em 0;
+}
+
+.ancho-50{
+    width: 50%;
+}
+
+.div-table{
+    display: table;
+}
+.div-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabla{
+    border-collapse: collapse;
+}
+.tabla td, th{
+    border: 1px solid #898989;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.tabla th{
+    border: 1px solid #898989;
+    padding: 0.5em;
+    color: #085d80;
+}
+
+.tabla td ol{
+    font-size: 1rem;
+}
+
+.font-size12{font-size: 1.2em;}
+
+/*estilos para el titulo*/
+.titulo_pag{
+   width: 100%; 
+}
+.titulo_pag img{
+    float: left;
+    margin-right: 1em;
+    height: 4.5em;
+}
+
+.titulo_pag h1{
+    margin: 0;
+    margin-top: 0.5em;
+    color:  #0d82b1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0,0.75);
+}
+.titulo_pag h2{
+    margin: 0;
+    color:  #085d80 ;
+    letter-spacing: 0.075em;
+}
+/*estilos para el menu*/
+.nav-bg{
+    background:#085d80;
+}
+
+.menu{
+    text-align: left;
+    line-height: 3.5em;
+    padding-left: 0;
+}
+
+.menu li{
+    display: inline;
+    padding: 1em 0;
+    margin: 0.5em;
+}
+
+.menu li:hover{
+    background:  #6fcbf0;
+    border-radius: 2px;
+}
+
+.menu li a{
+    color: #FFFFFF;
+    padding: 1em;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+    color: #085d80;
+}
+
+/*movil*/
+.movil{
+    display: none !important;
+}
+
+/*estilos para el footer*/
+.footer-bg{
+    background: #444444;
+}
+
+.pie-pagina{
+    color: #FFFFFF;
+}
+
+.pie-pagina a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.pie-pagina p{
+    margin: 0;
+}
+
+.pie-pagina h2{
+    margin: 0;
+}
+
+.pie-pagina a:hover{
+    color: #e1e1e1;
+}
+
+/*redes*/
+.redes{
+    background-color: #161616;
+    padding: 2em 0;
+    text-align: center;
+    width: 100%;
+}
+.redes a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1em;
+}
+
+/*contenido*/
+.contenido{
+    padding: 1em;
+}
+.contenido h1{
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+.contenido h2{
+    font-size: 1.5em;
+}
+.contenido h3{
+    text-decoration: underline;
+}
+.contenido p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.contenido ol li{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.contenido img{
+    max-width: 480px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+    .menu{
+        width: 100%;
+        margin: 0;
+        line-height: 2em;
+    }
+    
+    .menu li{
+        display: none;
+        padding: 0.5em 1em;
+        margin: 0;
+    }
+        
+    .menu li a{
+        padding: 0;
+    }
+    
+    .movil{
+        display: block !important;
+    }
+
+    .menu li:hover{
+        background:  #085d80;
+    }
+    .menu li a:hover{
+        color: #6fcbf0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ancho_pag{
+        width: 90%;
+        margin: 0.3em 5%;
+    }
+
+    .titulo_pag h2{
+        display: none;
+    }
+
+    .titulo_pag img{
+        height: 2em;
+    }
+    
+    .titulo_pag h1{
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .titulo_pag h1{
+        font-size: 1.3em;
+        margin-bottom: 0.7em;
+    }
+    .ancho-50{
+        width: 100%;
+    }
+    
+    .div-table{
+        display: block;
+    }
+    .div-cell{
+        display: block;
+    }
+ 
+    .contenido p{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de software - Metodologias</title>
+    <meta name="description" content="Modelos generales, Proceso unificado de desarrollo de software, programación extrema, SCRUM">
+    <meta name="keywords" content="desarrollo de software, software, ingenieria de software">
+    <link rel="stylesheet" href="recursos/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="ancho_pag">
+        <div class="titulo_pag">
+            <img src="img/isc_logo.png" alt="Logotipo del ISC">
+            <h1>Desarrollo de Software - Metodologías</h1>
+            <h2>Instituto de Sistemas Cusco - UNSAAC</h2>
+        </div>
+    </header>
+    <nav class="nav-bg">
+        <ul class="ancho_pag menu">
+            <!-- icono del menu movil-->
+            <li class="movil" id="btn-movil"><a href="#"><i class="fas fa-bars"></i></a></li>
+            <!-- enlaces de navergacion-->
+            <li class="item-menu"><a href="/"><i class="fas fa-home"></i></a></li>
+            <li class="item-menu"><a href="software.html">Software</a></li>
+            <li class="item-menu"><a href="ingenieria.html">Ingeniería de software</a></li>
+            <li class="item-menu"><a href="metodologias.html">Métodos de D.S.</a></li>
+            <li class="item-menu"><a href="modelos.html">Modelos</a></li>
+            <li class="item-menu"><a href="arquitectura.html">Arquitecturas</a></li>
+            <li class="item-menu"><a href="users.html"><i class="fas fa-users"></i></a></li>
+        </ul>
+    </nav>
+    <section class="ancho_pag">
+        <article class="contenido">
+            <h1 class="text-blue">Metodologias de desarrollo de software</h1>
+
+            <h2 class="text-blue">I. Modelos generales</h2>
+
+            <h3>1. Cascada:</h3>
+            <p>Ordena cada fase del proceso de desarrollo de software, de forma que el inicio de cada fase, debe esperar a la culminación de la anterior.</p>
+            <img src="img/cascada.JPG" alt="modelo cascada">
+
+            <h3>2. Iterativo:</h3>
+            <p>Consiste en la <b>iteración</b>b> de varias fases de desarrollo de software. Al final de cada iteración se entrega una versión mejorada del software.</p>
+            <img src="img/iterativo.JPG" alt="modelo iterativo">
+
+            <h3>3. Incremental:</h3>
+            <p>Se basa en la construcción de una porcion de software. Incrementa la funcionalidad del software en cada iteración que se realiza.</p>
+            <img src="img/incremental.JPG" alt="modelo incremental">
+            
+            <br>
+            <h2 class="text-blue">II. Proceso Unificado de Desarollo de Software - PUDS</h2>
+            <p>Marco de desarrollo de software dirigdo por casos de uso</p>
+            <h3>Caracteristicas:</h3>
+            <ol>
+                <li>Iterativo e Incremental</li>
+                <li>Dirigido por casos de uso</li>
+                <li>Centrado en la arquitectura</li>
+                <li>Enfocado en los riesgos</li>
+            </ol>
+            <h3>Fases:</h3>
+            <table class="tabla">
+                <tbody>
+                    <tr>
+                        <th>Inicio</th>
+                        <td>Se define el negocio (Analisis de requerimientos), la visión del software, tiempo y costos.</td>
+                    </tr>
+                    <tr>
+                        <th>Elaboración</th>
+                        <td>Se refina la visión del software (detalla los requierimientos a travez de la elaboración de casos de uso), se evalua los riesgos</td>
+                    </tr>
+                    <tr>
+                        <th>Construcción</th>
+                        <td>Implementación del software</td>
+                    </tr>
+                    <tr>
+                        <th>Transición</th>
+                        <td>Pruebas e implantación del software</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h2 class="text-blue">III. Programación Extrema (XP)</h2>
+            <p>Es una metodologia enfocada en la adpatabilidad y el cambio de los requisitos durante el desarrollo del software.</p>
+            <h3>Caracteristicas:</h3>
+            <ol>
+                <li>Adaptable a cambios</li>
+                <li>Iterativo e incrental</li>
+                <li>Trabajo en equipo (programación en parejas)</li>
+                <li>Comunicación fluida (Cliente y equipo de desarrollo)</li>
+            </ol>
+            <br>
+            <h3>Elementos:</h3>
+            <table class="tabla">
+                <tbody>
+                    <tr>
+                        <th>Historias de usuario</th>
+                        <td>Tecnica utilizada para especificar los requisitos del software</td>
+                    </tr>
+                    <tr>
+                        <th>Roles</th>
+                        <td>
+                            <ol>
+                                <li>Programador</li>
+                                <li>Cliente</li>
+                                <li>Encargado de pruebas (tester)</li>
+                                <li>Encargado de seguimiento (traker)</li>
+                                <li>Entrenador (coach)</li>
+                                <li>Gestor</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Proceso</th>
+                        <td>
+                            <ol>
+                                <li>El cliente define el valor de negocio a implementar</li>
+                                <li>El programador estima el esfuerzo necesario para su implementación</li>
+                                <li>El programador construye ese valor</li>
+                                <li>Vuelve al paso 1</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h2 class="text-blue">IV. SCRUM</h2>
+            <p>Es un proceso iterativo e incremental para desarrollar y gestionar cualquier proyecto (no necesariamente software).</p>
+            <h3>Caracteristicas:</h3>
+            <ol>
+                <li>Adaptable a cambios</li>
+                <li>Iterativo (Sprint) e incrental (incremento del software)</li>
+                <li>Basado en reuniones diarias (Planificación y/o revisión de un sprint)</li>
+                <li>Organización independiente de equipos</li>
+            </ol>
+            <br>
+            <h3>Roles:</h3>
+            <ol>
+                <li><b>ScrumMaster.-</b> Conoce y dirige los procesos de SCRUM y trabaja junto con el jefe de proyecto.</li>
+                <li><b>Product Owner.-</b> Representa al cliente.</li>
+                <li><b>Team (equipo).-</b> Grupo de programadores.</li>
+            </ol>
+            <br>
+            <h3>Practicas:</h3>
+            <ol>
+                <li>Los clientes se convierten en parte del equipo de desarrollo.</li>
+                <li>Frecuentes entregables intermedios con funcionalidad. Esto permite al cliente conseguir trabajar con el software antes y permite al proyecto cambiar los requisitos de acuerdo con las necesidades.</li>
+                <li>Se desarrollan planes de riesgos y mitigación frecuentes por parte del equipo de desarrollo, la mitigación de riesgos, la monitorización y la gestión de riesgos se lleva a cabo en todas las etapas y con compromiso.</li>
+                <li>Transparencia en la planificación y desarrollo de módulos, permitir a cada uno saber quién es responsable de qué y cuándo.</li>
+                <li>Frecuentes reuniones de las personas involucradas en el negocio para monitorizar el progreso.</li>
+                <li>Los problemas no se barren debajo de la alfombra. Nadie es penalizado por reconocer o describir un problema imprevisto.</li>
+            </ol>
+        </article>
+    </section>
+    <footer>
+        <div class="footer-bg padding-2em-x">
+            <div class="ancho_pag div-table pie-pagina">
+                <div class="ancho-50 div-cell">
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="software.html">Software</a></li>
+                        <li><a href="ingenieria.html">Ingeniería de software</a></li>
+                        <li><a href="metodologias.html">Métodos de desarrollo</a></li>
+                        <li><a href="modelos.html">Modelos de programación</a></li>
+                        <li><a href="arquitectura.html">Arquitecturas</a></li>
+                    </ul>
+                </div>
+                <div class="ancho-50 div-cell">
+                    <h2>Curso de desarrollo de software</h2>
+                    <p>Instituto de Sistemas Cusco</p>
+                    <p>Modulo V-D</p>
+                    <p>Derechos reservados 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="redes">
+            <div class="ancho_pag">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="recursos/root.js"></script>
+</body>
+</html>
